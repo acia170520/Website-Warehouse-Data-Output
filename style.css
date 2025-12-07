@@ -1,0 +1,1139 @@
+/* ================================
+   NAVBAR
+   ================================ */
+.nav {
+    background-color: #224c95;
+    padding: 12px;
+    border-bottom: 1px solid #0e0950;
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+
+    position: relative;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.nav-link:hover {
+    color: #aad3ff;
+}
+
+/* ================================
+   PROFILE ICON (KANAN ATAS)
+   ================================ */
+.profile-container {
+    position: absolute;
+    right: 25px;
+    top: 70px;
+}
+
+.profile-icon {
+    width: 42px;
+    height: 42px;
+    background: rgb(95, 167, 249);
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* POPUP PROFILE */
+.profile-popup {
+    position: absolute;
+    top: 55px;
+    right: 0;
+    width: 240px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    padding: 15px;
+    display: none;
+    z-index: 10;
+}
+
+.popup-header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.popup-icon {
+    width: 60px;
+    height: 60px;
+    background: rgb(95, 167, 249);
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-username {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+    font-family: Arial;
+}
+
+.logout-btn {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.logout-btn:hover {
+    color: darkred;
+}
+
+/* ================================
+   GAMBAR BERANDA
+   ================================ */
+.mainsanbe {
+    width: 90%;
+    height: 50vh;
+    align-self: center;
+    margin-top: 5%;
+    border-radius: 500px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* ================================
+   BODY
+   ================================ */
+body {
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* ================================
+   TEKS SELAMAT DATANG
+   ================================ */
+.great {
+    color: rgb(95, 167, 249);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ================================
+   FAQ SECTION
+   ================================ */
+.faq-container {
+    width: 90%;
+    margin: 40px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.faq-title {
+    text-align: center;
+    color: rgb(95, 167, 249);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 12px;
+}
+
+.faq-question {
+    width: 100%;
+    background: #e8f2ff;
+    color: rgb(40, 115, 190);
+    border: none;
+    padding: 14px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.faq-question:hover {
+    background: #d9eaff;
+}
+
+.faq-question.active {
+    background: #cfe3ff;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    background: #ffffff;
+    padding: 0 14px;
+    border-left: 4px solid rgb(95, 167, 249);
+    margin-top: 4px;
+    border-radius: 0 0 6px 6px;
+    transition: max-height 0.3s ease-out;
+}
+
+.faq-answer p {
+    padding: 12px 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+/* ================================
+   LOGIN PAGE
+   ================================ */
+.login-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    width: 350px;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.20);
+}
+
+.login-title {
+    text-align: center;
+    color: rgb(95, 167, 249);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+}
+
+.login-label {
+    font-family: Arial;
+    font-size: 14px;
+    color: #444;
+}
+
+.login-input {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0 15px 0;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.login-input:focus {
+    border-color: rgb(95, 167, 249);
+}
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: rgb(95, 167, 249);
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    background: #1e4b7c;
+}
+
+.login-error {
+    color: red;
+    text-align: center;
+    font-family: Arial;
+    margin-bottom: 12px;
+}
+
+.login-register {
+    text-align: center;
+    margin-top: 10px;
+    font-family: Arial;
+}
+
+/* ================================
+   REGISTER PAGE (SELARAS LOGIN)
+   ================================ */
+
+.card {
+    width: 350px;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 10px 25px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+.card h2 {
+    color: rgb(95, 167, 249);
+    margin-bottom: 20px;
+}
+
+.notif {
+    background: rgba(95, 167, 249, 0.15);
+    padding: 10px;
+    border-radius: 8px;
+    color: rgb(80, 130, 200);
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #808080;
+    outline: none;
+    box-sizing: border-box;
+}
+
+input:focus {
+    border-color: rgb(95, 167, 249);
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: rgb(95, 167, 249);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #1e4b7c;
+}
+
+.link {
+    margin-top: 15px;
+}
+
+/* ================================
+   STYLING KHUSUS HALAMAN DAFTAR BARANG
+================================ */
+
+.barang-title {
+    text-align: center;
+    margin-top: 25px;
+    color: rgb(95, 167, 249);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.barang-subtitle {
+    text-align: center;
+    color: rgb(40, 115, 190);
+}
+
+.barang-form {
+    width: 330px;
+    background: #ffffff;
+    margin: 25px auto;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+    font-family: Arial;
+}
+
+.barang-form input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #aaa;
+}
+
+.btn-barang {
+    width: 100%;
+    padding: 10px;
+    background: rgb(95, 167, 249);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-barang:hover {
+    background: #1e4b7c;
+}
+
+.barang-divider {
+    width: 85%;
+    margin: 25px auto;
+    border: none;
+    border-bottom: 2px solid #d0d0d0;
+}
+
+/* ================================
+   TABLE BARANG
+================================ */
+
+.barang-table {
+    width: 85%;
+    margin: auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.barang-table th {
+    background: rgb(95, 167, 249);
+    color: white;
+    padding: 12px;
+}
+
+.barang-table td {
+    padding: 12px;
+    text-align: center;
+}
+
+.barang-table tr:nth-child(even) {
+    background: #f0f6ff;
+}
+
+.btn-edit {
+    background: rgb(40, 115, 190);
+    color: white;
+    padding: 7px 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-edit:hover {
+    background: #1e4b7c;
+}
+
+.btn-hapus {
+    background: red;
+    color: white;
+    padding: 7px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.btn-hapus:hover {
+    background: darkred;
+}
+
+/* ================================
+   POPUP EDIT
+================================ */
+
+.edit-popup {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.45);
+    padding-top: 60px;
+}
+
+.edit-card {
+    margin: auto;
+    background: white;
+    padding: 20px;
+    width: 320px;
+    border-radius: 12px;
+    box-shadow: 0px 12px 25px rgba(0,0,0,0.25);
+    font-family: Arial;
+}
+
+.btn-cancel {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 8px;
+    background: #aaa;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-cancel:hover {
+    background: #888;
+}
+
+
+/* ================================
+   JUDUL HALAMAN
+================================ */
+.judul-halaman {
+    text-align: center;
+    color: #224c95;
+    margin-top: 25px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* ================================
+   FORM TAMBAH BARANG
+================================ */
+.form-container {
+    width: 350px;
+    margin: 25px auto;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 6px 18px rgba(0,0,0,0.15);
+}
+
+.form-title {
+    text-align: center;
+    color: #224c95;
+    margin-bottom: 15px;
+}
+
+.form-box .label {
+    color: #224c95;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.input-text {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #224c95;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.btn-primary {
+    width: 100%;
+    background: #224c95;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn-primary:hover {
+    background: #183971;
+}
+
+/* ================================
+   TABEL BARANG
+================================ */
+.barang-table {
+    width: 85%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: #ffffff;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0px 6px 20px rgba(0,0,0,0.15);
+}
+
+.barang-table th {
+    background: #224c95;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+}
+
+.barang-table td {
+    padding: 12px;
+    font-size: 14px;
+    text-align: center;
+    color: #224c95;
+}
+
+.barang-table tr:nth-child(even) {
+    background: #f0f4ff;
+}
+
+.barang-table tr:hover {
+    background: #dfe8ff;
+    transition: 0.2s;
+}
+
+/* Tombol Edit */
+.btn-edit {
+    background: #224c95;
+    color: white;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-edit:hover {
+    background: #183971;
+}
+
+/* Tombol Hapus */
+.btn-delete {
+    background: rgb(209, 0, 0);
+    color: white;
+    padding: 6px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+.btn-delete:hover {
+    background: rgb(150, 0, 0);
+}
+
+/* ================================
+   POPUP EDIT
+================================ */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-box {
+    background: #ffffff;
+    width: 330px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+}
+
+.popup-title {
+    text-align: center;
+    color: #224c95;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.btn-secondary {
+    background: #909090;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-secondary:hover {
+    background: #6f6f6f;
+}
+
+.popup-button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+/* =============================
+   TABLE BARANG
+============================= */
+
+/* Pastikan tabel menggunakan layout tetap agar kolom sejajar */
+.barang-table {
+    table-layout: fixed;      /* penting supaya lebar kolom konsisten */
+    width: 90%;
+    margin: 40px auto;
+}
+
+/* Tentukan lebar relatif untuk setiap kolom */
+.barang-table .col-no,
+.barang-table .td-no {
+    width: 6%;                /* kolom nomor kecil */
+    text-align: center;
+}
+
+.barang-table .col-nama,
+.barang-table .td-nama {
+    width: 56%;               /* kolom nama lebih lebar */
+    text-align: left;        /* nama align left untuk keterbacaan */
+    padding-left: 22px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.barang-table .col-jumlah,
+.barang-table .td-jumlah {
+    width: 18%;               /* jumlah relatif sedang */
+    text-align: center;
+}
+
+.barang-table .col-aksi,
+.barang-table .td-aksi {
+    width: 20%;               /* aksi kolom cukup lebar untuk tombol */
+    margin-left: 52%;
+}
+
+/* Vertical center semua cell */
+.barang-table th,
+.barang-table td {
+    vertical-align: middle;
+    padding: 14px 12px;
+    box-sizing: border-box;
+}
+
+/* Jika masih ada border-collapse etc, biarkan */
+/* Penataan baris */
+.barang-table tbody tr:nth-child(even) {
+    background: #e9f2ff;
+}
+.barang-table tbody tr:nth-child(odd) {
+    background: #f6f9ff;
+}
+.barang-table tbody tr:hover {
+    background: #d9e8ff;
+}
+
+/* Aksi cell: gunakan flex supaya tombol sejajar horisontal dan vertikal */
+.aksi-cell {
+    display: flex;
+    justify-content: center;   /* tombol di tengah horizontal */
+    align-items: center;       /* tombol di tengah vertikal */
+    gap: 20px;
+}
+
+/* Tombol styling (jaga ukuran konsisten) */
+.btn-edit {
+    background: #224c95;
+    color: #fff;
+    padding: 7px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-hapus {
+    background: #e53935;
+    color: #fff;
+    padding: 7px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+/* Pastikan link terlihat seperti tombol (jika <a>) */
+.btn-hapus:hover { text-decoration: none; opacity: .95; }
+
+/* ====================== */
+/* POPUP OVERLAY */
+/* ====================== */
+.popup-overlay {
+    display: none;                   /* awalnya tersembunyi */
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    backdrop-filter: blur(3px);
+
+    /* untuk posisi tengah */
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ====================== */
+/* POPUP BOX */
+/* ====================== */
+.popup-box {
+    background: #ffffff;
+    width: 340px;
+    padding: 24px;
+    border-radius: 14px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+    animation: popupScale 0.25s ease;
+    font-family: Arial, sans-serif;
+}
+
+.popup-title {
+    margin-bottom: 18px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #224c95;
+}
+
+/* Input & Label */
+.popup-label {
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 6px;
+    color: #333;
+}
+
+.popup-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c7c7c7;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/* ====================== */
+/* BUTTON GROUP */
+/* ====================== */
+.popup-btn-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* Tombol Save */
+.btn-save {
+    background: #224c95;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 48%;
+}
+
+.btn-save:hover {
+    background: #1a3a73;
+}
+
+/* Tombol Cancel */
+.btn-cancel {
+    background: #e53935;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 48%;
+}
+
+.btn-cancel:hover {
+    background: #c62828;
+
+}
+
+/* ====================== */
+/* ANIMASI */
+/* ====================== */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+@keyframes popupScale {
+    from { transform: scale(0.8); opacity: 0; }
+    to   { transform: scale(1); opacity: 1; }
+}
+
+.popup-buttons {
+    display: flex !important;
+    gap: 10px !important;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.btn-equal {
+    flex: 1 !important;          /* Paksa 2 tombol punya lebar yang sama */
+    text-align: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+    white-space: nowrap;         /* Mencegah teks membuat tombol melebar */
+}
+
+/* Warna tombol */
+.btn-save {
+    background: #224c95;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-cancel {
+    background: #e53935;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* FORM PEGAWAI */
+.form-pegawai {
+    width: 320px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+.form-input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background: #224c95;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-submit:hover {
+    background: #005fcc;
+}
+
+
+/*permintaan*/
+.body-permintaan {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+}
+
+/* WRAPPER UTAMA */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+/* JUDUL HALAMAN */
+.title-page {
+    text-align: center;
+    color: #224c95;
+    font-size: 26px;
+    margin-bottom: 35px;
+    font-family: sans-serif;
+}
+
+/* CARD TAMBAH PERMINTAAN */
+.card {
+    background: #fff;
+    width: 500px;
+    padding: 25px;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.12);
+}
+
+.card-title {
+    text-align: center;
+    color: #224c95;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* GRID FORM */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group.full {
+    grid-column: 1 / 3;
+}
+
+input, select {
+    padding: 10px;
+    border: 1px solid #bcc7d9;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* BUTTONS */
+.btn-primary {
+    background: #224c95;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.btn-secondary {
+    background: #cdd7ef;
+    color: black;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-edit {
+    background: #224c95;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+
+.btn-delete {
+    background: #d64545;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* ROW TOMBOL LAPORAN/PDF */
+.action-row {
+    margin-top: 35px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+/* TABLE */
+.table-wrapper {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table th {
+    background: #224c95;
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.table td {
+    padding: 10px;
+    font-size: 14px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.table tr:last-child td {
+    border-bottom: none;
+}
+
+/* POPUP */
+.popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.35);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-inner {
+    background: #fff;
+    padding: 25px;
+    width: 420px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+}
+
+
+/*footer css*/
+.footer-home {
+    background-color: #224c95;
+    color: white;
+    padding: 30px;
+    margin-top: 40px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-home h3 {
+    margin-bottom: 10px;
+}
+
+.footer-left p {
+    margin: 5px 0;
+}
+
+.footer-copy {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+}
